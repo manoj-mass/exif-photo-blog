@@ -1,15 +1,12 @@
 import { clsx } from 'clsx/lite';
 import Link from 'next/link';
-import { BiLogoGithub } from 'react-icons/bi';
+import {  BiLogoFacebookCircle } from 'react-icons/bi';
 
 export default function RepoLink() {
   return (
     <span className="inline-flex items-center gap-2 whitespace-nowrap">
-      <span className="hidden sm:inline-block">
-        Made with
-      </span>
       <Link
-        href="http://github.com/sambecker/exif-photo-blog"
+        href="https://www.facebook.com/manojdarshana/"
         target="_blank"
         className={clsx(
           'flex items-center gap-0.5',
@@ -17,11 +14,11 @@ export default function RepoLink() {
           'hover:underline',
         )}
       >
-        <BiLogoGithub
+        <BiLogoFacebookCircle
           size={16}
           className="translate-y-[0.5px] hidden xs:inline-block"
         />
-        exif-photo-blog
+        Manoj
       </Link>
     </span>
   );
